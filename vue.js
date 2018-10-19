@@ -179,7 +179,7 @@ var filters = new Vue({
                             res.name = element.commit.author.name;
                         }
                         if(res.liste.lenght > 5){
-                            res.liste.slice(5);
+                            res.liste = res.liste.slice(0,5);
                         }
 
                         jQuery.ajax({
