@@ -823,7 +823,7 @@ var filters = new Vue({
                             var dateDebut = new Date(scope.time_start);
                             var dateFin = new Date(scope.time_end)
                             dateFin.setDate(dateFin.getDate() + 1)
-                            
+
                             if (scope.time_start != "" && scope.time_end != "") {
                                 if (dateCommit >= new Date(scope.time_start).getTime() && dateCommit <= dateFin.getTime()) {
                                     res.liste.push(element);
@@ -834,7 +834,7 @@ var filters = new Vue({
                                     res.liste.push(element);
                                     res.name = element.commit.author.name;
                                 }
-                            } if (scope.time_start != "" && scope.time_end == "") {
+                            } else if (scope.time_start != "" && scope.time_end == "") {
                                 if (dateCommit >= dateDebut.getTime()) {
                                     res.liste.push(element);
                                     res.name = element.commit.author.name;
