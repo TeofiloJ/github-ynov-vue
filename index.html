@@ -31,49 +31,63 @@
 
     <div class="container-fluid" id="filters">
 
+        <div class="row mt-4 ml-3 ">
 
+                <form style="border-radius:3px" class="col-md-3 p-3 border">
 
-        <div class="row mt-4 ml-3">
-            <form class="col-md-3 p-3 border">
-                <div>
-                    <div class="form-group">
-                        <label for="project">Choix Projet</label>
-                        <select v-model="project_selected" class="form-control" id="project">
-                            <option value="">Tous</option>
-                            <option v-for="project in projects" v-bind:value="project">
-                                {{project}}
-                            </option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="periode_start">Début période</label>
-                        <input v-model="time_start" type="date" id="periode_start">
-                    </div>
-                    <div class="form-group">
-                        <label for="periode_end">fin période</label>
-                        <input v-model="time_end" type="date" id="periode_end">
-                    </div>
-                    <div class="form-group">
-                        <label for="account">Choix Compte</label>
-                        <select v-model="account_selected" class="form-control" name="account">
-                            <option value="">Tous</option>
-                            <option v-for="account in accounts" v-bind:value="account">
-                                {{account}}
-                            </option>
-                        </select>
-                    </div>
                     <div>
-                        <input v-on:click="getCommit()" class="btn btn-success" type="button" value="Fetch">
+                        <form action="" method="get">
+                            <h2>Auth</h2>
+                            <div class="form-group">
+                                <label for="user">User</label>
+                                <input v-model="auth_user" type="text" id="user" value="TeofiloJ">
+                            </div>
+                            <div class="form-group">
+                                <label for="token">Token</label>
+                                <input v-model="auth_token" type="text" id="token" value=" ">
+                            </div>
+
+                        </form>
+
+                        <div class="form-group">
+                            <h2>Filters</h2>
+                            <label for="project">Choose a project</label>
+                            <select v-model="project_selected" class="form-control" id="project">
+                                <option value="">All</option>
+                                <option v-for="project in projects" v-bind:value="project">
+                                    {{project}}
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="periode_start">Commit period</label>
+                            <br/>
+                            <input v-model="time_start" type="date" id="periode_start">
+                            <input v-model="time_end" type="date" id="periode_end">
+                        </div>
+                        <div class="form-group">
+                            <label for="account">Choose an account</label>
+                            <select v-model="account_selected" class="form-control" name="account">
+                                <option value="">Tous</option>
+                                <option v-for="account in accounts" v-bind:value="account">
+                                    {{account}}
+                                </option>
+                            </select>
+                        </div>
+                        <div>
+                            <input v-on:click="getCommit()" class="btn btn-success" type="button" value="Fetch">
+                        </div>
                     </div>
-                </div>
 
-            </form>
+                </form>
 
-            <div class="col-md-9">
-                <div class="border mb-3" v-for="result in commits_list">
+            <div class="col-md-9 scrollit">
+                <div style="border-radius:3px " class="border mb-3" v-for="result in commits_list">
 
-                    <div style="background-color:lightblue" class="head p-1">{{result.name}} -
-                        <a :href="result.link">{{result.repo}}</a>
+                    <div style="color:rgb(226, 245, 205); background-color:rgb(63, 160, 63)" class="head p-1">
+                        <i class="far fa-user"></i> {{result.name}}
+                        <i class="fab fa-github"></i>
+                        <a style="color:rgb(226, 245, 205);" :href="result.link">{{result.repo}}</a>
                     </div>
                     <table class="table table-sm table-striped table-hover">
                         <thead class="">
@@ -87,36 +101,31 @@
                         <tbody>
                             <tr v-for="commit in result.liste">
                                 <td class="align-middle">
-                                    <img class="img-fluid" style="width: 50px; height: 50px; border-radius:3px" :src="commit.author.avatar_url" ></a>
-                                    <b>{{commit.author.login}}</b>
+                                    <img class="img-fluid" style="width: 30px; height: 30px; border-radius:3px" :src="commit.author?commit.author.avatar_url:''">
+
+                                    <b>{{commit.author?commit.author.login:''}}</b>
                                 </td>
                                 <td class="align-middle">{{new Date(commit.commit.author.date).toLocaleDateString()}}</td>
-                                <td class="align-middle"><i>{{commit.commit.message}}</i></td>
+                                <td class="align-middle">
+                                    <i>{{commit.commit.message}}</i>
+                                </td>
                                 <td>
                                     <a class="align-middle" :href="commit.html_url" title="lien vers le commit" alt="lien vers le commit">
-                                        <i class="fas fa-code-branch"></i>
+                                        <i class=" align-middle fas fa-code-branch"></i>
                                     </a>
                                 </td>
                             </tr>
                         </tbody>
 
                     </table>
-                    <div id="accordion">
-                        <div>
-                            <div class="" id="headingOne">
-                                <h5 class="mb-0">
-                                    <div class="border" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <i class="fas fa-angle-right"></i> README.md
-                                    </div>
-                                </h5>
-                            </div>
+                    <div>
+                        <div class="border pl-1" data-toggle="collapse" v-bind:data-target="'#' + result.login">
+                            <i class="fab fa-readme"></i> README.md</div>
 
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
-                                    <pre>{{result.readme}}</pre>
-                                </div>
-                            </div>
+                        <div v-bind:id="result.login" class="collapse">
+                            <pre>{{result.readme}}</pre>
                         </div>
+
                     </div>
                 </div>
             </div>
