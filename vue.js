@@ -768,7 +768,8 @@ var filters = new Vue({
         accounts: accounts,
         project_selected: "",
         account_selected: "",
-        time_selected: "",
+        time_start: "",
+        time_end: "",
         commits_list: []
     },
 
@@ -817,8 +818,24 @@ var filters = new Vue({
                     dataType: 'json',
                     success: function (data) {
                         for (var element of data) {
-                            if (scope.time_selected != "") {
-                                if (new Date(element.commit.author.date).getTime() >= new Date(scope.time_selected).getTime()) {
+
+                            var dateCommit = new Date(element.commit.author.date).getTime();
+                            var dateDebut = new Date(scope.time_start);
+                            var dateFin = new Date(scope.time_end)
+                            dateFin.setDate(dateFin.getDate() + 1)
+                            
+                            if (scope.time_start != "" && scope.time_end != "") {
+                                if (dateCommit >= new Date(scope.time_start).getTime() && dateCommit <= dateFin.getTime()) {
+                                    res.liste.push(element);
+                                    res.name = element.commit.author.name;
+                                }
+                            } else if (scope.time_start == "" && scope.time_end != "") {
+                                if (dateCommit <= dateFin.getTime()) {
+                                    res.liste.push(element);
+                                    res.name = element.commit.author.name;
+                                }
+                            } if (scope.time_start != "" && scope.time_end == "") {
+                                if (dateCommit >= dateDebut.getTime()) {
                                     res.liste.push(element);
                                     res.name = element.commit.author.name;
                                 }
@@ -827,11 +844,8 @@ var filters = new Vue({
                                 res.name = element.commit.author.name;
                             }
 
-                            res.name = element.commit.author.name;
                         }
-                        //if(res.liste.lenght > 5){
                         res.liste = res.liste.slice(0, 5);
-                        //}
 
                         jQuery.ajax({
                             type: "GET",
@@ -867,10 +881,24 @@ var filters = new Vue({
             scope.commits_list = [];
 
             for (var element of offline_commits) {
-                if (scope.time_selected != "") {
-                    console.log(new Date(element.commit.author.date).getTime())
-                    console.log(new Date(scope.time_selected).getTime())
-                    if (new Date(element.commit.author.date).getTime() >= new Date(scope.time_selected).getTime()) {
+
+                var dateCommit = new Date(element.commit.author.date).getTime();
+                var dateDebut = new Date(scope.time_start);
+                var dateFin = new Date(scope.time_end)
+                dateFin.setDate(dateFin.getDate() + 1)
+
+                if (scope.time_start != "" && scope.time_end != "") {
+                    if (dateCommit >= new Date(scope.time_start).getTime() && dateCommit <= dateFin.getTime()) {
+                        res.liste.push(element);
+                        res.name = element.commit.author.name;
+                    }
+                } else if (scope.time_start == "" && scope.time_end != "") {
+                    if (dateCommit <= dateFin.getTime()) {
+                        res.liste.push(element);
+                        res.name = element.commit.author.name;
+                    }
+                } else if (scope.time_start != "" && scope.time_end == "") {
+                    if (dateCommit >= dateDebut.getTime()) {
                         res.liste.push(element);
                         res.name = element.commit.author.name;
                     }
