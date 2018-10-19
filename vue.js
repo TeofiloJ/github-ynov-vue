@@ -3,91 +3,744 @@ const projects = [
 ]
 
 const accounts = [
-    "teofiloJ",
-    "raphaelCharre"
-]
+    "Killy85",
+    "Nair0fl",
+    "raphaelCharre",
+    "mathiasLoiret",
+    "thomaspich",
+    "TeofiloJ",
+    "Grigusky",
+    "Dakistos",
+    "mael61",
+    "KevinPautonnier",
+    "BenoitCochet",
+    "sfongue",
+    "ClementCaillaud",
+    "gfourny",
+    "Mokui",
+    "LordInateur",
+    "AntoineGOSSET",
+    "etienneYnov",
+    "Coblestone",
+    "AlexDesvallees",
+    "rudy8530",
+    "benjaminbra",
+    "mael61",
+    "alixnzt"
+];
 
 const offline_commits = [
     {
-      "sha": "84de17b89748fc995cbcfb4dd779400d29b648db",
-      "node_id": "MDY6Q29tbWl0MTUzNjM4NzcxOjg0ZGUxN2I4OTc0OGZjOTk1Y2JjZmI0ZGQ3Nzk0MDBkMjliNjQ4ZGI=",
-      "commit": {
+        "sha": "84de17b89748fc995cbcfb4dd779400d29b648db",
+        "node_id": "MDY6Q29tbWl0MTUzNjM4NzcxOjg0ZGUxN2I4OTc0OGZjOTk1Y2JjZmI0ZGQ3Nzk0MDBkMjliNjQ4ZGI=",
+        "commit": {
+            "author": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "committer": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "message": "implementation of search function",
+            "tree": {
+                "sha": "aeb2df1bf3d7b94de58db73135c36c3fb6de6383",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/trees/aeb2df1bf3d7b94de58db73135c36c3fb6de6383"
+            },
+            "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null
+            }
+        },
+        "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "comments_url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db/comments",
         "author": {
-          "name": "Téofilo",
-          "email": "teofilo.jeandot@gmail.com",
-          "date": "2018-10-19T06:01:38Z"
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
         },
         "committer": {
-          "name": "Téofilo",
-          "email": "teofilo.jeandot@gmail.com",
-          "date": "2018-10-19T06:01:38Z"
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
         },
-        "message": "implementation of search function",
-        "tree": {
-          "sha": "aeb2df1bf3d7b94de58db73135c36c3fb6de6383",
-          "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/trees/aeb2df1bf3d7b94de58db73135c36c3fb6de6383"
+        "parents": [
+            {
+                "sha": "2a246cf92431ad7736242113e7af460839b27111",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/2a246cf92431ad7736242113e7af460839b27111",
+                "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/2a246cf92431ad7736242113e7af460839b27111"
+            }
+        ]
+    },
+    {
+        "sha": "84de17b89748fc995cbcfb4dd779400d29b648db",
+        "node_id": "MDY6Q29tbWl0MTUzNjM4NzcxOjg0ZGUxN2I4OTc0OGZjOTk1Y2JjZmI0ZGQ3Nzk0MDBkMjliNjQ4ZGI=",
+        "commit": {
+            "author": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "committer": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "message": "implementation of search function",
+            "tree": {
+                "sha": "aeb2df1bf3d7b94de58db73135c36c3fb6de6383",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/trees/aeb2df1bf3d7b94de58db73135c36c3fb6de6383"
+            },
+            "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null
+            }
         },
-        "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
-        "comment_count": 0,
-        "verification": {
-          "verified": false,
-          "reason": "unsigned",
-          "signature": null,
-          "payload": null
-        }
-      },
-      "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
-      "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/84de17b89748fc995cbcfb4dd779400d29b648db",
-      "comments_url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db/comments",
-      "author": {
-        "login": "TeofiloJ",
-        "id": 34065590,
-        "node_id": "MDQ6VXNlcjM0MDY1NTkw",
-        "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/TeofiloJ",
-        "html_url": "https://github.com/TeofiloJ",
-        "followers_url": "https://api.github.com/users/TeofiloJ/followers",
-        "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
-        "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
-        "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
-        "repos_url": "https://api.github.com/users/TeofiloJ/repos",
-        "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
-        "type": "User",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "TeofiloJ",
-        "id": 34065590,
-        "node_id": "MDQ6VXNlcjM0MDY1NTkw",
-        "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/TeofiloJ",
-        "html_url": "https://github.com/TeofiloJ",
-        "followers_url": "https://api.github.com/users/TeofiloJ/followers",
-        "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
-        "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
-        "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
-        "repos_url": "https://api.github.com/users/TeofiloJ/repos",
-        "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
-        "type": "User",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "2a246cf92431ad7736242113e7af460839b27111",
-          "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/2a246cf92431ad7736242113e7af460839b27111",
-          "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/2a246cf92431ad7736242113e7af460839b27111"
-        }
-      ]
+        "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "comments_url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db/comments",
+        "author": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "2a246cf92431ad7736242113e7af460839b27111",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/2a246cf92431ad7736242113e7af460839b27111",
+                "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/2a246cf92431ad7736242113e7af460839b27111"
+            }
+        ]
+    },
+    {
+        "sha": "84de17b89748fc995cbcfb4dd779400d29b648db",
+        "node_id": "MDY6Q29tbWl0MTUzNjM4NzcxOjg0ZGUxN2I4OTc0OGZjOTk1Y2JjZmI0ZGQ3Nzk0MDBkMjliNjQ4ZGI=",
+        "commit": {
+            "author": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "committer": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "message": "implementation of search function",
+            "tree": {
+                "sha": "aeb2df1bf3d7b94de58db73135c36c3fb6de6383",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/trees/aeb2df1bf3d7b94de58db73135c36c3fb6de6383"
+            },
+            "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null
+            }
+        },
+        "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "comments_url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db/comments",
+        "author": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "2a246cf92431ad7736242113e7af460839b27111",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/2a246cf92431ad7736242113e7af460839b27111",
+                "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/2a246cf92431ad7736242113e7af460839b27111"
+            }
+        ]
+    },
+    {
+        "sha": "84de17b89748fc995cbcfb4dd779400d29b648db",
+        "node_id": "MDY6Q29tbWl0MTUzNjM4NzcxOjg0ZGUxN2I4OTc0OGZjOTk1Y2JjZmI0ZGQ3Nzk0MDBkMjliNjQ4ZGI=",
+        "commit": {
+            "author": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "committer": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "message": "implementation of search function",
+            "tree": {
+                "sha": "aeb2df1bf3d7b94de58db73135c36c3fb6de6383",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/trees/aeb2df1bf3d7b94de58db73135c36c3fb6de6383"
+            },
+            "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null
+            }
+        },
+        "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "comments_url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db/comments",
+        "author": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "2a246cf92431ad7736242113e7af460839b27111",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/2a246cf92431ad7736242113e7af460839b27111",
+                "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/2a246cf92431ad7736242113e7af460839b27111"
+            }
+        ]
+    }, {
+        "sha": "84de17b89748fc995cbcfb4dd779400d29b648db",
+        "node_id": "MDY6Q29tbWl0MTUzNjM4NzcxOjg0ZGUxN2I4OTc0OGZjOTk1Y2JjZmI0ZGQ3Nzk0MDBkMjliNjQ4ZGI=",
+        "commit": {
+            "author": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "committer": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "message": "implementation of search function",
+            "tree": {
+                "sha": "aeb2df1bf3d7b94de58db73135c36c3fb6de6383",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/trees/aeb2df1bf3d7b94de58db73135c36c3fb6de6383"
+            },
+            "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null
+            }
+        },
+        "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "comments_url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db/comments",
+        "author": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "2a246cf92431ad7736242113e7af460839b27111",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/2a246cf92431ad7736242113e7af460839b27111",
+                "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/2a246cf92431ad7736242113e7af460839b27111"
+            }
+        ]
+    },
+    {
+        "sha": "84de17b89748fc995cbcfb4dd779400d29b648db",
+        "node_id": "MDY6Q29tbWl0MTUzNjM4NzcxOjg0ZGUxN2I4OTc0OGZjOTk1Y2JjZmI0ZGQ3Nzk0MDBkMjliNjQ4ZGI=",
+        "commit": {
+            "author": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "committer": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "message": "implementation of search function",
+            "tree": {
+                "sha": "aeb2df1bf3d7b94de58db73135c36c3fb6de6383",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/trees/aeb2df1bf3d7b94de58db73135c36c3fb6de6383"
+            },
+            "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null
+            }
+        },
+        "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "comments_url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db/comments",
+        "author": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "2a246cf92431ad7736242113e7af460839b27111",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/2a246cf92431ad7736242113e7af460839b27111",
+                "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/2a246cf92431ad7736242113e7af460839b27111"
+            }
+        ]
+    },
+    {
+        "sha": "84de17b89748fc995cbcfb4dd779400d29b648db",
+        "node_id": "MDY6Q29tbWl0MTUzNjM4NzcxOjg0ZGUxN2I4OTc0OGZjOTk1Y2JjZmI0ZGQ3Nzk0MDBkMjliNjQ4ZGI=",
+        "commit": {
+            "author": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "committer": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "message": "implementation of search function",
+            "tree": {
+                "sha": "aeb2df1bf3d7b94de58db73135c36c3fb6de6383",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/trees/aeb2df1bf3d7b94de58db73135c36c3fb6de6383"
+            },
+            "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null
+            }
+        },
+        "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "comments_url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db/comments",
+        "author": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "2a246cf92431ad7736242113e7af460839b27111",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/2a246cf92431ad7736242113e7af460839b27111",
+                "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/2a246cf92431ad7736242113e7af460839b27111"
+            }
+        ]
+    },
+    {
+        "sha": "84de17b89748fc995cbcfb4dd779400d29b648db",
+        "node_id": "MDY6Q29tbWl0MTUzNjM4NzcxOjg0ZGUxN2I4OTc0OGZjOTk1Y2JjZmI0ZGQ3Nzk0MDBkMjliNjQ4ZGI=",
+        "commit": {
+            "author": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "committer": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "message": "implementation of search function",
+            "tree": {
+                "sha": "aeb2df1bf3d7b94de58db73135c36c3fb6de6383",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/trees/aeb2df1bf3d7b94de58db73135c36c3fb6de6383"
+            },
+            "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null
+            }
+        },
+        "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "comments_url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db/comments",
+        "author": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "2a246cf92431ad7736242113e7af460839b27111",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/2a246cf92431ad7736242113e7af460839b27111",
+                "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/2a246cf92431ad7736242113e7af460839b27111"
+            }
+        ]
+    },
+    {
+        "sha": "84de17b89748fc995cbcfb4dd779400d29b648db",
+        "node_id": "MDY6Q29tbWl0MTUzNjM4NzcxOjg0ZGUxN2I4OTc0OGZjOTk1Y2JjZmI0ZGQ3Nzk0MDBkMjliNjQ4ZGI=",
+        "commit": {
+            "author": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "committer": {
+                "name": "Téofilo",
+                "email": "teofilo.jeandot@gmail.com",
+                "date": "2018-10-19T06:01:38Z"
+            },
+            "message": "implementation of search function",
+            "tree": {
+                "sha": "aeb2df1bf3d7b94de58db73135c36c3fb6de6383",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/trees/aeb2df1bf3d7b94de58db73135c36c3fb6de6383"
+            },
+            "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/git/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null
+            }
+        },
+        "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/84de17b89748fc995cbcfb4dd779400d29b648db",
+        "comments_url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/84de17b89748fc995cbcfb4dd779400d29b648db/comments",
+        "author": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "TeofiloJ",
+            "id": 34065590,
+            "node_id": "MDQ6VXNlcjM0MDY1NTkw",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/34065590?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TeofiloJ",
+            "html_url": "https://github.com/TeofiloJ",
+            "followers_url": "https://api.github.com/users/TeofiloJ/followers",
+            "following_url": "https://api.github.com/users/TeofiloJ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TeofiloJ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TeofiloJ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TeofiloJ/subscriptions",
+            "organizations_url": "https://api.github.com/users/TeofiloJ/orgs",
+            "repos_url": "https://api.github.com/users/TeofiloJ/repos",
+            "events_url": "https://api.github.com/users/TeofiloJ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TeofiloJ/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "2a246cf92431ad7736242113e7af460839b27111",
+                "url": "https://api.github.com/repos/TeofiloJ/github-ynov-vue/commits/2a246cf92431ad7736242113e7af460839b27111",
+                "html_url": "https://github.com/TeofiloJ/github-ynov-vue/commit/2a246cf92431ad7736242113e7af460839b27111"
+            }
+        ]
     }
-  ];
+];
 
 const offline_readme = {
     "name": "README.md",
@@ -102,11 +755,11 @@ const offline_readme = {
     "content": "IyBnaXRodWIteW5vdi12dWUNCg0KUHJvamV0IGRlIE1hdGVyZSBZbm92DQoN\nCkFmZmljaGVyIGxhIGxpc3RlIGRlcyByZXBvc2l0b3JpZXMgZ2l0aHViIGV0\nIHBvdXZvaXIgZmlsdHJlciBwYXIgdXRpbGlzYXRldXIgZXQgcGFyIHByb2pl\ndC4NCg0KRm9uY3Rpb25uYWxpdGVzIDoNCi0gRmlsdHJlciBsZXMgcmVwb3Np\ndG9yaWVzIHBhciB1dGlsaXNhdGV1cnMNCi0gRmlsdHJlciBsZXMgcmVwb3Np\ndG9yaWVzIHBhciBwcm9qZXQNCi0gQWZmaWNoZXIgbGEgbGlzdGUgZGVzIDUg\nZGVybmllcnMgY29tbWl0cw0KLSBBZmZpY2hlciBsZSBSRUFETUUgZHUgcHJv\namV0DQoNCkEgdmVuaXIgOg0KLSBGaWx0cmVyIGxlcyByZXBvc2l0b3JpZXMg\nYSBwYXJ0aXIgZCd1bmUgZGF0ZQ==\n",
     "encoding": "base64",
     "_links": {
-      "self": "https://api.github.com/repos/raphaelCharre/github-ynov-vue/contents/README.md?ref=master",
-      "git": "https://api.github.com/repos/raphaelCharre/github-ynov-vue/git/blobs/49a8044a05a9bc6fc0b3e0d0d468abb5bb315cc2",
-      "html": "https://github.com/raphaelCharre/github-ynov-vue/blob/master/README.md"
+        "self": "https://api.github.com/repos/raphaelCharre/github-ynov-vue/contents/README.md?ref=master",
+        "git": "https://api.github.com/repos/raphaelCharre/github-ynov-vue/git/blobs/49a8044a05a9bc6fc0b3e0d0d468abb5bb315cc2",
+        "html": "https://github.com/raphaelCharre/github-ynov-vue/blob/master/README.md"
     }
-  };
+};
 
 var filters = new Vue({
     el: '#filters',
@@ -134,28 +787,28 @@ var filters = new Vue({
                         getData(account, project);
                     }
                 }
-            }else if (owner == "" && repo != "") {
+            } else if (owner == "" && repo != "") {
                 for (var account of accounts) {
                     getData(account, repo);
                 }
-            }else if (owner != "" && repo == "") {
+            } else if (owner != "" && repo == "") {
                 for (var project of projects) {
                     getData(owner, project);
                 }
-            }else {
-                getData(owner,repo);
+            } else {
+                getData(owner, repo);
             }
 
 
             function getData(owner, repo) {
 
                 var res = {
-                    liste : [],
-                    login : owner,
-                    repo : repo,
-                    name : "",
-                    readme : [],
-                    link : 'https://github.com/' + owner + '/' + repo
+                    liste: [],
+                    login: owner,
+                    repo: repo,
+                    name: "",
+                    readme: [],
+                    link: 'https://github.com/' + owner + '/' + repo
                 }
 
                 jQuery.ajax({
@@ -164,75 +817,75 @@ var filters = new Vue({
                     dataType: 'json',
                     success: function (data) {
                         for (var element of data) {
-                            if(scope.time_selected != ""){
-                                console.log(new Date(element.commit.author.date).getTime())
-                                console.log(new Date(scope.time_selected).getTime())
-                                if(new Date(element.commit.author.date).getTime() >= new Date(scope.time_selected).getTime()){
+                            if (scope.time_selected != "") {
+                                if (new Date(element.commit.author.date).getTime() >= new Date(scope.time_selected).getTime()) {
                                     res.liste.push(element);
                                     res.name = element.commit.author.name;
-                                }   
-                            }else{
+                                }
+                            } else {
                                 res.liste.push(element);
                                 res.name = element.commit.author.name;
                             }
-                            
+
                             res.name = element.commit.author.name;
                         }
-                        if(res.liste.lenght > 5){
-                            res.liste = res.liste.slice(0,5);
-                        }
+                        //if(res.liste.lenght > 5){
+                        res.liste = res.liste.slice(0, 5);
+                        //}
 
                         jQuery.ajax({
                             type: "GET",
                             url: "https://api.github.com/repos/" + owner + "/" + repo + "/readme",
                             dataType: 'json',
                             success: function (data) {
-                                console.log(data)
                                 res.readme.push(data);
                             }
                         })
                         scope.commits_list.push(res);
                     }
                 })
-                
+
             }
             var test = "https://api.github.com/repos/" + owner + "/" + repo + "/commits";
             console.log(test);
         },
 
-        getCommitOffline: function (){
+        getCommitOffline: function () {
             var scope = this;
             var owner = "TeofiloJ";
             var repo = "github-ynov-vue";
 
             var res = {
-                liste : [],
-                login : owner,
-                repo : repo,
-                name : "",
-                readme : "",
-                link : 'https://github.com/' + owner + '/' + repo
+                liste: [],
+                login: owner,
+                repo: repo,
+                name: "",
+                readme: "",
+                link: 'https://github.com/' + owner + '/' + repo
             }
 
             scope.commits_list = [];
 
             for (var element of offline_commits) {
-                if(scope.time_selected != ""){
+                if (scope.time_selected != "") {
                     console.log(new Date(element.commit.author.date).getTime())
                     console.log(new Date(scope.time_selected).getTime())
-                    if(new Date(element.commit.author.date).getTime() >= new Date(scope.time_selected).getTime()){
+                    if (new Date(element.commit.author.date).getTime() >= new Date(scope.time_selected).getTime()) {
                         res.liste.push(element);
                         res.name = element.commit.author.name;
-                    }   
-                }else{
+                    }
+                } else {
                     res.liste.push(element);
                     res.name = element.commit.author.name;
-                }                                        
+                }
 
-            }            
+            }
+
+            res.liste = res.liste.slice(0, 5);
+
             res.readme = atob(offline_readme.content);
 
-            scope.commits_list.push(res);           
+            scope.commits_list.push(res);
             console.log(scope.commits_list);
         }
     }
