@@ -28,6 +28,8 @@ const accounts = [
     "alixnzt"
 ];
 
+
+
 var filters = new Vue({
     el: '#filters',
     data: {
